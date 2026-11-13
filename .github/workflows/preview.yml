@@ -291,7 +291,7 @@ jobs:
           rm -rf site/downloads site/latest.json
 
       - name: Download preview APKs
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           pattern: preview-apks-*
           merge-multiple: true

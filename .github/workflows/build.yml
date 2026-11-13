@@ -393,7 +393,7 @@ jobs:
 
       - name: Download signed CI APKs
         if: steps.signing.outputs.publish == 'true'
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           pattern: app-*-release-*
           merge-multiple: true
