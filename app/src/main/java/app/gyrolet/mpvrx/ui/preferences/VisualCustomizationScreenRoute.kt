@@ -8,6 +8,6 @@ import kotlinx.serialization.Serializable
 object VisualCustomizationScreenRoute : Screen {
   @Composable
   override fun Content() {
-    VisualCustomizationScreen(, onBack = {})
+    VisualCustomizationScreen(onBack = {})
   }
 }
