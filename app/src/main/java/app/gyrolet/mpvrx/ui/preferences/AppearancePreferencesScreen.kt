@@ -294,6 +294,28 @@ object AppearancePreferencesScreen : Screen {
 
               AnimatedVisibility(visible = isThemeSectionExpanded) {
                 Column {
+                ExpressivePreferenceItem {
+                  Preference(
+                    title = { Text("Visual Customization") },
+                    summary = { Text("Cards, bars, icons, density…") },
+                    onClick = { backstack.navigateTo(VisualCustomizationScreenRoute) },
+                  )
+                }
+                ExpressivePreferenceItem {
+                  Preference(
+                    title = { Text("Live Visual Preview") },
+                    summary = { Text("Try styles before applying") },
+                    onClick = { backstack.navigateTo(VisualLivePreviewScreenRoute) },
+                  )
+                }
+                ExpressivePreferenceItem {
+                  Preference(
+                    title = { Text("Color & Shape Editor") },
+                    summary = { Text("Border, accent, transparency") },
+                    onClick = { backstack.navigateTo(VisualColorEditorScreenRoute) },
+                  )
+                }
+
                   PreferenceDivider()
 
                   Column(modifier = Modifier.padding(vertical = 8.dp)) {
